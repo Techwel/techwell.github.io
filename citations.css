@@ -13,3 +13,6 @@
    margin-right: 0px;
    margin-left: 0px;
 }
+.container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header{
+ margin-right = 0px;  
+}
