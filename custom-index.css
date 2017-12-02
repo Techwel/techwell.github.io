@@ -139,7 +139,7 @@
 }
 
 .main-text p{
-   font-family: Nexa-Bold;
+   font-family: Nexa-Light;
    font-size: 16px;
 }
 
@@ -203,14 +203,14 @@
 }
 
 .footer_a{
-   font-family: Nexa-Bold;
+   font-family: Nexa-Light;
    font-size: 16px
 }
 
 .btn{
    margin-top: 5px;
    padding: 6px 3px;
-   font-family: Nexa-Bold;
+   font-family: Nexa-Light;
    font-weight: bold;
    font-size: 18;
 }
@@ -224,7 +224,7 @@
 #result{
    padding-right: 24px;
    padding-top: 8px;
-   font-family: Nexa-Bold;
+   font-family: Nexa-Light;
    font-size: 16px;
 }
 
