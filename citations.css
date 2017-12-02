@@ -2,70 +2,6 @@
    padding-top: 30px;
 }
 
-.citation1{
-   padding-left: 85px;
-   margin-bottom: -60px;
-}
-
-#citation_image1{
-   padding-left: 85px;
-   margin-right: 40px;
-   margin-top: 70px;
-}
-
-.citation2{
-   padding-left: 85px;
-   padding-top: 60px;
-   margin-bottom: -120px;
-}
-
-#citation_image2{
-   margin-top: 140px;
-   padding-left: 85px;
-}
-
-.citation3{
-   padding-left: 85px;
-   padding-top: 100px;
-   margin-bottom: -140px
-}
-
-#citation_image3{
-   margin-top: 140px;
-   padding-left: 85px;
-}
-
-.citation4{
-   padding-left: 85px;
-   padding-top: 140px;
-   margin-bottom: -140px
-}
-
-#citation_image4{
-   margin-top: 140px;
-   padding-left: 85px;
-}
-
-.citation5{
-   padding-left: 85px;
-   padding-top: 140px;
-   margin-bottom: -205px
-}
-
-#citation_image5{
-   margin-top: 205px;
-   padding-left: 85px;
-}
-
-.citation6{
-   padding-left: 85px;
-   padding-top: 200px;
-   margin-bottom: -220px
-}
-
-#citation_image6{
-   padding-top: 220px;
-}
 .final-row{
    padding-top: 140px;
 }
@@ -74,5 +10,5 @@
    color: #e5e5e5;
 }
 .row{
-   margin-right: 0;
+   margin-right: -15px;
 }
