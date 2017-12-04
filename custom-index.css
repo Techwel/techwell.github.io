@@ -254,7 +254,7 @@
    margin-right: 17px;
 }
 
-#profile, #logout, #feed, #result{
+#logout{
    display: none;
 }
 
