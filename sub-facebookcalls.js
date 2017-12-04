@@ -78,7 +78,7 @@ window.fbAsyncInit = function() {
                // console.log('HERE: True, we are logged in to Facebook');
                document.getElementById('fb-btn').style.display = 'none';
                document.getElementById('logout').style.display = 'block';
-               document.getElementById('logout').style.marginTop = '-5px';
+               document.getElementById('logout').style.marginTop = '8px';
                document.getElementById('logout').style.marginLeft = '-11px';
                document.getElementById('result').style.display = 'block';
                document.getElementById('result').style.marginTop = '10px';
