@@ -1,4 +1,3 @@
-// JavaScript File
 window.fbAsyncInit = function() {
           FB.init({
             appId      : '306726549824274',
