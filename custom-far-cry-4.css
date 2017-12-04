@@ -101,7 +101,7 @@
 
 @font-face{
    font-family: 'Alcubierre';
-   src: url('https://github.com/Techwell/techwell.github.io/Alcubierre.otf ');
+   src: url('Alcubierre.otf ') format('otf');
    font-weight: 400;
    font-style: normal;
 }
