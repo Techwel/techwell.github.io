@@ -209,3 +209,14 @@
 #facebook_tag{
    color: #e5e5e5;
 }
+
+
+#fb-btn{
+   margin-top: 12px;
+   margin-right: 17px;
+}
+
+#profile, #logout, #feed, #result{
+   display: none;
+}
+
