@@ -8,10 +8,13 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="custom-far-cry-4.css" type="text/css" />
+        <script src="ajax.js"></script>
+        <script src="parse-response.js"></script>
+        <script type="text/javascript" src="sub-facebookcalls.js"></script>
     </head>
     <body>
       <!--NavBar-->
-      <nav class = "navbar navbar-default navbar-fixed-top"> <!-or navbar-default -!>
+      <nav class = "navbar navbar-default navbar-fixed-top"> <!--or navbar-default -->
         <div class = "container-fluid">
             
             <div class = "navbar-header">
@@ -42,6 +45,14 @@
                   </ul>
                </li>
                <li><a href = "about.html">About</a></li>
+              </ul>
+              <!--right side-->
+              <ul id = "parent"class = "nav navbar-nav navbar-right">
+                <li id = "result"></li>
+                 <li><a id = "logout" href = "#" onclick = "logout()"></a></li>
+                 <li>
+                     <fb:login-button id = "fb-btn" scope="public_profile,user_location"onlogin="checkLoginState();"></fb:login-button>
+               </li>
               </ul>
             </div>
             
