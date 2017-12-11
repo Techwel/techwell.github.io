@@ -37,3 +37,7 @@
    font-family: Nexa-Light;
    font-size: 16px;
 }
+
+span {
+   display: block;
+}
