@@ -1,0 +1,263 @@
+.navbar{
+   border-radius: 0;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover{
+   background-color: transparent;
+}
+
+/*nav-right*/
+.navbar-right{
+   margin-right: -15px;
+   padding-top: 5.5px;
+}
+
+.form-control{
+   font-family: Alcubierre;
+   text-align: center;
+}
+
+#message{
+   font-family: Nexa-Bold;
+   font-size: 15px;
+}
+
+#first_btn{
+   font-family: Nexa-Bold;
+   background-color: #858687;
+   color: white;
+}
+
+/*Carousel*/
+
+.container{
+   background-color: transparent;
+   width: 98%;
+}
+
+.jumbotron{
+   background-color: #e7e7e7;
+   padding-bottom: 0px;
+   margin-bottom: 0px;
+}
+
+.slideshow-container{
+   position: relative;
+   margin: auto;
+   max-width: 1000px;
+}
+
+.slides{
+   display: none;
+}
+
+/*Arrows*/
+      /*Moving next to the right*/
+.next_slide{
+   right: 0;
+   border-radius: 3px 0 0 3px;
+}
+
+.prev_slide, .next_slide{
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   transition: 0.6s ease; /*delay*/
+   border-radius: 0 3px 3px 0;
+}
+
+.prev_slide:hover, .next_slide:hover{
+   text-decoration: none;
+   background-color: rgba(0,0,0,0.1)
+}
+
+   /*Dots at the center*/
+.dot{
+   cursor: pointer;
+   height: 8px;
+   width: 8px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+}
+
+
+.active, .dot:hover{
+   background-color: #717171;
+}
+
+.dot_group{
+   position: relative;
+   left: 0%;
+   text-align: center;
+}
+
+.text{
+   position: absolute;
+   bottom: 8px;
+   padding: 5px 12px;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+   color: #c2c8d1;
+   font-size: 14px;
+   font-family: Alcubierre;
+}
+
+@font-face{
+   font-family: 'Alcubierre';
+   src: url('Alcubierre.otf');
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face{
+   font-family: 'SIMPLIFICA-Typeface';
+   src: url('SIMPLIFICA Typeface.ttf');
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face{
+   font-family: 'Nexa-Light';
+   src: url('/Nexa Light.otf');
+   font-weight: 400;
+   font-style: normal;
+}
+
+.main-text h1, h2{
+   font-family: SIMPLIFICA-Typeface;
+   font-weight: bolder;
+}
+
+.main-text p{
+   font-family: Nexa-Light;
+   font-size: 16px;
+}
+
+.slides a{
+   text-decoration: none;
+   color: white;
+}
+
+.slides a:hover{
+   color: #bbb;
+}
+
+.common_divider{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+.footer{
+   /*background-color: #757575;*/
+   background-color: #858687;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   margin-top: 30px;
+}
+
+.st_row{
+   padding-left: 20px;
+   padding-top: 44px;
+}
+
+.st_row ul{
+   list-style: none;
+   margin: 0px 0px 14px 0px;
+   padding: 0;
+   padding-top: 15px;
+}
+
+.st_row h5{
+   color: black;
+}
+
+.st_row a{
+   color: white;
+}
+
+.st_row a:hover, a:focus{
+   text-decoration: none;
+   color: #bbb;
+}
+
+.container_divider{
+   display: block;
+   border-top: .5px solid black;
+   margin-top: 35px;
+   margin-bottom: 50px;
+}
+
+.footer h3{
+   font-family: Alcubierre;
+}
+
+.footer_a{
+   font-family: Nexa-Light;
+   font-size: 16px
+}
+
+.btn{
+   margin-top: 5px;
+   padding: 6px 3px;
+   font-family: Nexa-Light;
+   font-weight: bold;
+   font-size: 18;
+}
+
+.btn-custom{
+   margin-top:0px;
+   margin-right: 24px;
+}
+
+
+#result{
+   padding-right: 24px;
+   padding-top: 8px;
+   font-family: Nexa-Light;
+   font-size: 16px;
+}
+
+#message{
+   padding-right: 9px;
+   padding-top: 7px;
+}
+
+#video_1{
+   margin-top: 20px;
+   margin-bottom: 8px;
+}
+
+#video_1 button{
+   display: block;
+   float: right;
+
+}
+
+#facebook_tag{
+   color: #e5e5e5;
+}
+
+
+#fb-btn{
+   margin-top: 5.5px;
+   margin-right: 17px;
+}
+
+#logout{
+   display: none;
+}
+
+#searchBox{
+   padding-left: 5px;
+}
