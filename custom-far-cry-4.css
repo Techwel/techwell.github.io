@@ -98,13 +98,13 @@
    color: #bbb;
 }
 
-
 @font-face{
    font-family: 'Alcubierre';
-   src: url('Alcubierre.otf ') format('otf');
+   src: url('Alcubierre.otf');
    font-weight: 400;
    font-style: normal;
 }
+
 
 @font-face{
    font-family: 'SIMPLIFICA-Typeface';
@@ -178,7 +178,6 @@
 
 .footer h3{
    font-family: Alcubierre;
-   font-style: normal;
 }
 
 .footer_a{
