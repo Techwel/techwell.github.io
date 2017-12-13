@@ -105,9 +105,10 @@
    font-weight: 400;
    font-style: normal;
 }
+
 @font-face{
    font-family: 'SIMPLIFICA-Typeface';
-   src: url('SIMPLIFICA Typeface.ttf') format('ttf');
+   src: url('SIMPLIFICA Typeface.ttf');
    font-weight: 400;
    font-style: normal;
 }
