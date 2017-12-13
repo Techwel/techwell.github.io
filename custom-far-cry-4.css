@@ -120,7 +120,7 @@
    font-style: normal;
 }
 
-.main-text h1, h2,h3{
+.main-text h1, h2, h3{
    font-family: SIMPLIFICA-Typeface;
    font-weight: bolder;
 }
@@ -178,7 +178,7 @@
 
 .footer h3{
    font-family: Alcubierre;
-   font-weight: normal;
+   font-style: normal;
 }
 
 .footer_a{
