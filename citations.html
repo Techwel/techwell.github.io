@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TN | Citations</title>
+        <meta charset="utf-8"/>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="about.css" type="text/css" />
+        <link rel="stylesheet" href="citations.css" type="text/css" />
+        <script src="ajax.js"></script>
+        <script src="parse-response.js"></script>
+        <script type="text/javascript" src="sub-facebookcalls.js"></script>
+    </head>
+    <body>
+      <!--NavBar-->
+      <nav class = "navbar navbar-default navbar-fixed-top"> <!--or navbar-default -->
+        <div class = "container-fluid">
+
+            <div class = "navbar-header">
+               <button type = "button" class = "navbar-toggle" data-toggle="collapse"
+               data-target = "#navbar-main"> <!--edge 1-->
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+               </button>
+              <a href = "index.html" class = "navbar-brand">TechNation</a>
+            </div>
+
+            <!--the class below: enables the collapse feature
+            and we need to id to target it: edge 1:-->
+            <div class = "collapse navbar-collapse" id = "navbar-main">
+
+              <ul class = "nav navbar-nav">
+                <li><a href = "index.html"><span class = "glyphicon glyphicon-home"></span></a></li>
+
+                <li class = "dropdown">
+                  <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#"
+                  role = "button" aria-haspopup = "true" aria-expanded = "false"
+                  >Gameplays
+                  <span class = "caret"></span></a>
+                  <ul class = "dropdown-menu">
+                     <li><a href = "far-cry-4.html">Far Cry 4</a></li>
+                     <li><a href = "need-for-speed.html">Need For Speed</a></li>
+                  </ul>
+               </li>
+               <li ><a href = "about.html">About</a></li>
+              </ul>
+                <!--right side -->
+              <ul id = "parent" class = "nav navbar-nav navbar-right">
+                 <li id = "result"></li>
+                 <li><a id = "logout" href = "#" onclick = "logout()"></a></li>
+                 <li>
+                     <fb:login-button id = "fb-btn" scope="public_profile,user_location"onlogin="checkLoginState();"></fb:login-button>
+               </li>
+              </ul>
+
+            </div>
+
+        </div>
+
+      </nav>
+
+      <!--Banner-->
+      <div class = "jumbotron text-center">
+          <div class = "logo text-center">
+              <img src = "logo.png"/>
+          </div>
+      </div>
+
+    <!-- Main-Text -->
+    <div class = "container">
+          <div class = "row text-center main-text">
+              <h1>Citations</h1>
+              <hr>
+          </div>
+
+          <div class = "row">
+              <div class = "col-sm-4 main-text">
+                  <h2>Images</h2>
+              </div>
+          </div>
+
+          <hr/>
+
+         <div class = "row">
+             <div class = "col-sm-4 main-text">
+                <h3>Far Cry 4</h3>
+                <hr>
+                <p>The Far Cry 4 image on the Home page and on the actual
+                Far Cry 4 page I don't own it. I downloaded it from google
+                images. This is the citaton for it: <br/><br/>
+                <em>
+                far_cry_4_game-1280x720</em>.Digital image. N.p.,
+                n.d. Web. 30 Nov. 2017.&lt;http://www.bhmpics.c<br/>
+                om/view-far_cry_4_game-1280x720.html &gt;
+                </p>
+
+<!--                 <span>The Far Cry 4 image on the Home page and on the actual
+                Far Cry 4 page I don't own it. I downloaded it from google
+                images. This is the citaton for it: <br/><br/>
+                <em>
+                far_cry_4_game-1280x720</em>.Digital image. N.p.,
+                n.d. Web. 30 Nov. 2017.&lt;http://www.bhmpics.c
+                om/view-far_cry_4_game-1280x720.html &gt;
+                </span> -->
+             </div>
+
+             <div class = "col-sm-4 main-text">
+                  <h3>Need For Speed</h3>
+                  <hr/>
+                  <p>Any Need For Speed image I also dont own.
+                  I downloaded it from google images. This is the citaton for it:<br/><br/>
+                  <em>
+                  thumb-1920-653628</em>.Digital image. N.p., n.d
+                  . Web. 30 Nov. 2017.&lt;https://images2.alph<br/>
+                  acoders.com/653/thumb-1920-653628.jpg&gt;
+                  </p>
+             </div>
+             <div class = "col-sm-4 main-text">
+                  <h3>TwitchCon 2017 Logo</h3>
+                  <hr/>
+                  <p>The first image in the main section on the Home page.
+                   I also dont own it. I downloaded it from google images. This is the citaton for it:
+                   <br /><br/>
+                   <em>
+                   twitchcon_2017_logo_2048</em>.Digital image.
+                   N.p.,n.d. Web. 30 Nov. 2017.&lt;https://cdn.<br/>
+                   vox-cdn.com/thumbor/tBPq5oSdQEH<br/>
+                   slg0gC50JPQdgrB4=/0x0:2048x1366/<br/>
+                   1200x800/filters:focal(861x520:1<br/>
+                   187x846)/cdn.vox-cdn.com/uploads<br/>
+                   /chorus_image/image/52671587/twi<br/>
+                   tchcon_2017_logo_2048.0.jpg&gt;
+                 </p>
+             </div>
+        </div>
+        <!--Second Row-->
+        <div class = "row">
+            <div class = "col-sm-4 main-text">
+                  <h3>Sony PlayStation 4 Pro</h3>
+                  <hr/>
+                  <p>The second image in the main section on the Home page.
+                      This is the citaton for it:
+                   <br /><br/>
+                  <em>
+                  sony-playstation-4-ps4-pro-1tb
+                  </em>.
+                                                 Digital image.
+                  N.p., n.d. Web. 30 Nov. 2017.&lt;http<br/>
+                  s://cdn.idealo.com/folder/Product/511<br/>
+                  3/0/5113034/s3_produktbild_gross/sony<br/>
+                  -playstation-4-ps4-pro-1tb.png&gt;
+                 </p>
+             </div>
+             <div class = "col-sm-4 main-text">
+                 <h3>Computer Science</h3>
+                 <hr/>
+                 <p>The first image on the About page.This is the citaton for it:<br/><br/>
+                 <em>
+                 maxresdefault</em>.
+                                    Digital image. N.p., n.d.<br/>
+                 Web. 30 Nov. 2017.&lt;https://i.ytimg.com/v<br/>
+                 i/dNo_BVzNb28/maxresdefault.jpg&gt;
+                 </p>
+              </div>
+              <div class = "col-sm-4 main-text">
+                 <h3>Gaming</h3>
+                 <hr/>
+                 <p>The last image on the About page.This is the citaton for it:<br/><br/>
+                 <em>
+                 gaming</em>.
+                             Digital image. N.p., n.d.Web.<br/>
+                 30 Nov. 2017.&lt;http://donthatethegeek.<br/>
+                 com/wp-content/uploads/2016/05/gaming-2<br/>
+                 8646-1680x1050.jpg&gt;
+                 </p>
+            </div>
+          </div>
+
+    </div>
+
+      <!--Citations-->
+      <div class = "row text-center main-text final-row">
+             <hr>
+             <h1>End of Citations</h1>
+          </div>
+
+      <!--Footer-->
+      <footer class = "footer">
+         <div class = "container">
+            <div class = "row">
+               <div class = "st_row">
+                  <div class = "col-sm-1"></div>
+                  <div class = "col-sm-3">
+                      <h3>Gameplays</h3>
+                      <hr class = "common_divider">
+                      <ul>
+                       <li><a class = "footer_a" href = "far-cry-4.html">Far Cry 4</a></li>
+                       <li><a class = "footer_a" href = "need-for-speed.html">Need For Speed</a></li>
+                      </ul>
+                   </div>
+
+                    <div class = "col-sm-3">
+                       <h3>More</h3>
+                       <hr class = "common_divider">
+                       <ul>
+                          <li><a class = "footer_a" href = "about.html">About</a></li>
+                       </ul>
+                    </div>
+
+                    <div class = "col-sm-3">
+                       <h3>Follow Me As</h3>
+                       <hr class = "common_divider">
+                       <ul>
+                          <li id = "facebook_tag">Youtube: Techwell-Gamer</li>
+                       </ul>
+                       <h3>Site Info</h3>
+                       <hr class = "common_divider">
+                       <ul>
+                          <li><a class = "footer_a" href = "citations.html">Citations</a></li>
+                       </ul>
+                    </div>
+
+                    <div class = "col-sm-2">
+                       <img src = "logo.png"/>
+                       <p>&copy;2017 TechNation.link
+                       <br/>
+                       All Rights Reserved - sitelayout only.
+                       </p>
+                    </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+    </body>
+</html>

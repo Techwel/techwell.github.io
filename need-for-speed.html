@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TN | Need For Speed</title>
+        <meta charset="utf-8"/>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="custom-far-cry-4.css" type="text/css" />
+        <script src="ajax.js"></script>
+        <script src="parse-response.js"></script>
+        <script type="text/javascript" src="sub-facebookcalls.js"></script>
+    </head>
+    <body>
+      <!--NavBar-->
+      <nav class = "navbar navbar-default navbar-fixed-top"> <!--or navbar-default -->
+        <div class = "container-fluid">
+
+            <div class = "navbar-header">
+               <button type = "button" class = "navbar-toggle" data-toggle="collapse"
+               data-target = "#navbar-main"> <!-edge 1-!>
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+               </button>
+              <a href = "index.html" class = "navbar-brand">TechNation</a>
+            </div>
+
+            <!-the class below: enables the collapse feature
+            and we need to id to target it: edge 1:-!>
+            <div class = "collapse navbar-collapse" id = "navbar-main">
+
+              <ul class = "nav navbar-nav">
+                <li><a href = "index.html"><span class = "glyphicon glyphicon-home"></span></a></li>
+
+                <li class = "dropdown">
+                  <a id = "active" class = "dropdown-toggle" data-toggle = "dropdown" href = "#"
+                  role = "button" aria-haspopup = "true" aria-expanded = "false"
+                  >Gameplays
+                  <span class = "caret"></span></a>
+                  <ul class = "dropdown-menu">
+                     <li><a href = "far-cry-4.html">Far Cry 4</a></li>
+                     <li><a href = "need-for-speed.html">Need For Speed</a></li>
+                  </ul>
+               </li>
+               <li><a href = "about.html">About</a></li>
+              </ul>
+              <!--right side-->
+              <ul id = "parent"class = "nav navbar-nav navbar-right">
+                <li id = "result"></li>
+                 <li><a id = "logout" href = "#" onclick = "logout()"></a></li>
+                 <li>
+                     <fb:login-button id = "fb-btn" scope="public_profile,user_location"onlogin="checkLoginState();"></fb:login-button>
+               </li>
+              </ul>
+            </div>
+
+        </div>
+
+      </nav>
+
+      <!--Carousel: For this Page only-->
+      <div class = "jumbotron">
+         <div class = "slideshow-container">
+            <div class = "slides">
+               <img src = "Need for Speed.jpg" style = "width: 100%"/>
+            </div>
+
+            <a class = "prev_slide" onclick = "moveSlides(-1);">&#10094</a>
+            <a class = "next_slide" onclick = "moveSlides(1);">&#10095</a>
+
+         </div>
+         <div style = "text-align:center" class = "dot_group">
+            <span class = "dot" onclick = "this_slide(1);"></span>
+         </div>
+      </div>
+      <script type="text/javascript" src="custom-index.js"></script>
+
+      <!--Main Text-->
+      <div class = "container">
+          <div class = "row"><br/></div>
+          <div class = "row night_mode">
+              <div class = "col-sm-1"></div>
+              <div class = "col-sm-5 main-text">
+                  <h1 id = "text-header-h1">Q and A</h1>
+                  <p class = "text-par">Felis lorem. Lectus, consequat Hac commodo. Volutpat. Duis
+                  montes ad placerat. Cursus ipsum feugiat auctor fusce condimentu
+                  m tristique, quisque ullamcorper class primis feugiat inceptos u
+                  t leo egestas gravida ridiculus venenatis viverra proin netus lito
+                  ra amet sit netus nunc nisl rhoncus.</p>
+                  <p class = "text-par">Orci etiam. Lobortis turpis sociis. Nascetur cras sociis venen
+                  atis nibh, faucibus curae; aliquam gravida hac turpis eros. Semper
+                  nostra Massa. Lacinia. Cubilia egestas scelerisque mus. Aliquam in
+                  teger pulvinar fames dis suspendisse velit convallis odio eleifend
+                  in. Faucibus justo eu conubia a augue. Quam lacus pretium et euismod
+                  etiam donec praesent. Inceptos quis consectetuer blandit sapien,
+                  mollis class et nunc nec.</p>
+                  <hr />
+              </div>
+              <div class = "col-sm-5" id = "video_1">
+
+                    <div class = "embed-responsive embed-responsive-16by9">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/HyVGZqFEq-A" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                     <button class="btn btn-outline-secondary st-btn" onclick = "QA_button(0);"><p>Turn off the backlight</p></button>
+                    <script type="text/javascript" src="custom-need-for-speed.js"></script>
+                </div>
+          </div>
+      </div>
+
+      <!--Footer-->
+      <footer class = "footer">
+         <div class = "container">
+
+            <div class = "row">
+               <div class = "st_row">
+                  <div class = "col-sm-1"></div>
+                  <div class = "col-sm-3">
+                      <h3>Gameplays</h3>
+                      <hr class = "common_divider">
+                      <ul>
+                       <li><a class = "footer_a" href = "far-cry-4.html">Far Cry 4</a></li>
+                       <li><a class = "footer_a" href = "need-for-speed.html">Need For Speed</a></li>
+                      </ul>
+                   </div>
+
+                    <div class = "col-sm-3">
+                       <h3>More</h3>
+                       <hr class = "common_divider">
+                       <ul>
+                          <li><a class = "footer_a" href = "about.html">About</a></li>
+                       </ul>
+                    </div>
+
+                    <div class = "col-sm-3">
+                       <h3>Follow Me As</h3>
+                       <hr class = "common_divider">
+                       <ul>
+                          <li id = "facebook_tag">Youtube: Techwell-Gamer</li>
+                       </ul>
+                       <h3>Site Info</h3>
+                       <hr class = "common_divider">
+                       <ul>
+                          <li><a class = "footer_a" href = "citations.html">Citations</a></li>
+                       </ul>
+                    </div>
+
+                    <div class = "col-sm-2">
+                       <img src = "logo.png"/>
+                       <p>&copy;2017 TechNation.link
+                       <br/>
+                       All Rights Reserved - sitelayout only.
+                       </p>
+                    </div>
+                 </div>
+            </div>
+            </div>
+         </div>
+      </footer>
+    </body>
+</html>
